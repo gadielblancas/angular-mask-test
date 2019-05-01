@@ -1,0 +1,24 @@
+
+<div [formGroup]="form">
+  <mat-form-field class="example-full-width">
+    <input matInput [textMask]="{mask: datemask, guide: false}" 
+    placeholder="ful ssn" 
+    removeDash
+    formControlName="ssn" />
+  </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+    <input matInput [textMask]="{mask: phoneMask, guide: false}" 
+    placeholder="phone" 
+    removeDash
+    formControlName="phone" />
+  </mat-form-field>
+  <br>
+   <button mat-flat-button (click)="print()">print form in console</button>
+
+</div>
+
+
+<!-- Copyright 2018 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
